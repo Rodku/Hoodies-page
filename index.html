@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js" defer></script>
+    <title>Vorah - productos Hoodies </title>
+</head>
+<body>
+   <!-- <img src="img/svg/delete_24dp_.svg"> -->
+    <header>
+        <div class="top__bar-fixed">
+
+            <div class="option__seccions">
+
+                <a href="#" class="icon__options" id="icon__menu-open"><img src="img/svg/density_medium_24dp_2E303D_FILL0_wght200_GRAD0_opsz24.svg" alt="Menu"></a>
+
+                <ul class="options__text" role="navigation">
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Wholesale</a></li>
+                </ul>
+
+            </div>
+                      
+            <div class="logo__main center">
+                <a href="#"><img src="img/VORAH-logo.svg" alt="logo" role="presentation"></a>
+            </div>
+
+            <div class="shopping__section ">
+
+                <a href="#" class="icon__options"><img src="img/svg/search_24dp_2E303D_FILL0_wght200_GRAD0_opsz24.svg" alt="Search" aria-label="searcher-option"></a>
+                <a href="#" class="icon__options button-cart" id="icon__cart"><img src="img/svg/shopping_bag_24dp_2E303D_FILL0_wght200_GRAD0_opsz24.svg" alt="shopping-cart"></a>
+                <span class="badge__btn" role="notification" aria-label="badge-number-of-items-added">0</span>
+                <ul class="options__text" role="navigation">
+                    <li><a href="#">USD $</a></li>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li ><a href="#" id="cartmodal">Cart</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <article class="menu__mobile" id="menu_modal">
+            <div class="container__options">
+
+                <div class="title__close">
+                    <h2>Te podria interesar</h2>
+                    <button class="style__button" id="icon__menu-close"><img src="img/svg/close_24dp_2E303D_FILL0_wght200_GRAD0_opsz24.svg"></button>
+                </div>
+
+                <ul role="navigation" aria-label="option-of-navigation">
+                    <li>Shop</li>
+                    <li>About</li>
+                    <li>Wholesale</li>
+                    <li>Account</li>
+                </ul>
+
+            </div>
+        </article>
+
+        <article class="shopping__cart" aria-label="modal-of-shopping-cart">
+
+            <div class="cart__container">
+                
+                <div class="title__cart">
+                    <h2>Tu carrito</h2>
+                    <button class="style__button" id="close__modal"><img src="img/svg/close_24dp_2E303D_FILL0_wght200_GRAD0_opsz24.svg" ></button>
+                </div>
+
+                <div id="cart-items"> </div>
+                   
+            </div>
+
+        </article>
+
+        <article class="main__container-body">
+            <h1>Products_</h1>
+
+            <section >
+
+                <div class="options__ofProducts" role="list">
+
+                    <div class="numProducts"><p>39 of 202 products</p></div>
+
+                    <div class="filter__options">
+                        <button class="style__button">Filter <img src="img/svg/page_info_24dp_2E303D_FILL0_wght200_GRAD0_opsz24.svg" alt=""></button>
+                        <button id="sortBy__drop" class="style__button drop__down-button" style="padding-right: 0px;">Sort by <img src="img/svg/keyboard_arrow_down_24dp_2E303D_FILL0_wght200_GRAD0_opsz24.svg" alt=""></button>
+                        <div id="drop__container-sortBy" class="drop__down select">
+                            <ul role="list">
+                                <li>Price Selling</li>
+                                <li>Best Selling</li>
+                                <li>Price (low to high)</li>
+                                <li>Price (high to low)</li>
+                                <li>Latest</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container__product">
+                    <div class="product__list">
+
+                        <div class="card__templante">
+                            <img src="img/Navy_01.webp" alt="image-hoodie-blak" class="article__image">
+                            <div class="card__container">
+                                <h3>3008 PULLOVER HOODED SWEATSHIRT</h3>
+                                <span>400 GSM FLEECE</span>
+                                <div><P>$110</P></div>
+                                <div class="color__hoodies">
+                                    <img src="img/bacground-imagen/BLACK.png" alt="">
+                                    <img src="img/bacground-imagen/DUSTY_ROSE.webp" alt="">
+                                    <img src="img/bacground-imagen/heathergrey.webp" alt="">
+                                    <img src="img/bacground-imagen/WHITE.webp" alt="">
+                                    <img src="img/svg/add_24dp_.svg" alt="" class="icon__plus">
+                                </div>
+                                <button class="addToCart">Añadir al carrito</button>
+                            </div>
+                        </div>
+
+                        <div class="card__templante">
+                            <img src="img/Navy_02.webp" alt="image-hoodie-gray" class="article__image">
+                            <div class="card__container">
+                                <h3>3008 PULLOVER HOODED SWEATSHIRT</h3>
+                                <span>400 GSM FLEECE</span>
+                                <div><P>$110</P></div>
+                                <div class="color__hoodies">
+                                    <img src="img/bacground-imagen/BLACK.png" alt="">
+                                    <img src="img/bacground-imagen/DUSTY_ROSE.webp" alt="">
+                                    <img src="img/bacground-imagen/heathergrey.webp" alt="">
+                                    <img src="img/bacground-imagen/WHITE.webp" alt="">
+                                    <img src="img/svg/add_24dp_.svg" alt="" class="icon__plus">
+                                </div>
+                                <button class="addToCart">Añadir al carrito</button>
+                            </div>
+
+                        </div>
+
+                        <div class="card__templante">
+                            <img src="img/Navy_03.webp" alt="image-hoodie-white" class="article__image">
+                            <div class="card__container">
+                                <h3>3008 PULLOVER HOODED SWEATSHIRT</h3>
+                                <span>400 GSM FLEECE</span>
+                                <div><P>$110</P></div>
+                                <div class="color__hoodies">
+                                    <img src="img/bacground-imagen/BLACK.png" alt="">
+                                    <img src="img/bacground-imagen/DUSTY_ROSE.webp" alt="">
+                                    <img src="img/bacground-imagen/heathergrey.webp" alt="">
+                                    <img src="img/bacground-imagen/WHITE.webp" alt="">
+                                    <img src="img/svg/add_24dp_.svg" alt="" class="icon__plus">
+                                </div>
+
+                                <button class="addToCart">Añadir al carrito</button>
+
+                            </div>
+
+                        </div>
+
+                        <div class="card__templante">
+                            <img src="img/Navy_04.webp" alt="image-hoodie-orange" class="article__image">
+                            <div class="card__container">
+                                <h3>3008 PULLOVER HOODED SWEATSHIRT</h3>
+                                <span>400 GSM FLEECE</span>
+                                <div><P>$110</P></div>
+                                <div class="color__hoodies">
+                                    <img src="img/bacground-imagen/BLACK.png" alt="">
+                                    <img src="img/bacground-imagen/DUSTY_ROSE.webp" alt="">
+                                    <img src="img/bacground-imagen/heathergrey.webp" alt="">
+                                    <img src="img/bacground-imagen/WHITE.webp" alt="">
+                                    <img src="img/svg/add_24dp_.svg" alt="" class="icon__plus">
+                                </div>
+                                <button class="addToCart">Añadir al carrito</button>
+                            </div>
+
+                        </div>
+
+                        <div class="card__templante">
+                            <img src="img/Navy_05.webp" alt="image-hoodie-blue" class="article__image">
+                            <div class="card__container">
+                                <h3>3008 PULLOVER HOODED SWEATSHIRT</h3>
+                                <span>400 GSM FLEECE</span>
+                                <div><P>$110</P></div>
+                                <div class="color__hoodies">
+                                    <img src="img/bacground-imagen/BLACK.png" alt="">
+                                    <img src="img/bacground-imagen/DUSTY_ROSE.webp" alt="">
+                                    <img src="img/bacground-imagen/heathergrey.webp" alt="">
+                                    <img src="img/bacground-imagen/WHITE.webp" alt="">
+                                    <img src="img/svg/add_24dp_.svg" alt="" class="icon__plus">
+                                </div>
+                                <button class="addToCart">Añadir al carrito</button>
+                            </div>
+                        </div>
+
+                        <div class="card__templante">
+                            <img src="img/Navy_06.webp" alt="image-hoodie-dark-gray" class="article__image">
+                            <div class="card__container">
+                                <h3>3008 PULLOVER HOODED SWEATSHIRT</h3>
+                                <span>400 GSM FLEECE</span>
+                                <div><P>$110</P></div>
+                                <div class="color__hoodies">
+                                    <img src="img/bacground-imagen/BLACK.png" alt="">
+                                    <img src="img/bacground-imagen/DUSTY_ROSE.webp" alt="">
+                                    <img src="img/bacground-imagen/heathergrey.webp" alt="">
+                                    <img src="img/bacground-imagen/WHITE.webp" alt="">
+                                    <img src="img/svg/add_24dp_.svg" alt="" class="icon__plus">
+                                </div>
+                                <button class="addToCart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        
+                        <div class="card__templante">
+                            <img src="img/Navy_07.webp" alt="image-hoodie-dark-orange" class="article__image">
+                            <div class="card__container">
+                                <h3>3008 PULLOVER HOODED SWEATSHIRT</h3>
+                                <span>400 GSM FLEECE</span>
+                                <div><P>$110</P></div>
+                                <div class="color__hoodies">
+                                    <img src="img/bacground-imagen/BLACK.png" alt="">
+                                    <img src="img/bacground-imagen/DUSTY_ROSE.webp" alt="">
+                                    <img src="img/bacground-imagen/heathergrey.webp" alt="">
+                                    <img src="img/bacground-imagen/WHITE.webp" alt="">
+                                    <img src="img/svg/add_24dp_.svg" alt="" class="icon__plus">
+                                </div>
+                                <button class="addToCart">Añadir al carrito</button>
+                            </div>
+                        </div>
+                        
+                        <div class="card__templante">
+                            <img src="img/Navy_08.webp" alt="image-hoodie-red" class="article__image">
+                            <div class="card__container">
+                                <h3>3008 PULLOVER HOODED SWEATSHIRT</h3>
+                                <span>400 GSM FLEECE</span>
+                                <div><P>$110</P></div>
+                                <div class="color__hoodies">
+                                    <img src="img/bacground-imagen/BLACK.png" alt="">
+                                    <img src="img/bacground-imagen/DUSTY_ROSE.webp" alt="">
+                                    <img src="img/bacground-imagen/heathergrey.webp" alt="">
+                                    <img src="img/bacground-imagen/WHITE.webp" alt="">
+                                    <img src="img/svg/add_24dp_.svg" alt="" class="icon__plus">
+                                </div>
+                                <button class="addToCart">Añadir al carrito</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+        </article>
+
+    </main>
+    <footer class="footer">
+
+        <h2>Vorah Clothes store</h2>
+
+        <div class="colum__options">
+
+            <div class="description">
+
+                <p>Vorah is a shopping clothes, here you can find hoodies in all colors</p>
+                <div>
+                   <p>Social</p>
+                    <span>Instagram</span>
+                </div>
+
+            </div>
+
+            <div class="Information">
+                <p>Information</p>
+                <ul role="navigation">
+                    <li>Size Guide</li>
+                    <li>FAQ</li>
+                    <li>Wholesale</li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>Shipping & Returns</li>
+                </ul>
+            </div>
+
+            <div class="forms">
+                <p>Join our newsletter to stay up to date on features and releases.</p>
+                <form action="">
+                    <input type="email" placeholder="Enter your email">
+                </form>
+            </div>
+
+        </div>
+
+        <div class="polici-and-terms">
+            <p>© 2025 Vorah. All Rights Reserved</p>
+            <div>
+                <p>Terms of Service</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

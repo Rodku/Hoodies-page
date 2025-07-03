@@ -1,0 +1,183 @@
+$mainColor: #2E303D;
+$blacColorTranstarent: hsla(0, 0%, 0%, 0.4);
+$defaultToHover: #67697e;
+$outlineContainer: #d6d8e1;
+$colorwhite:#ffffff;
+$backgroundFooter: #f5f6f8;
+
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: 686px) { @content; }
+  } @else if $breakpoint == md {
+    @media (max-width: 1000px) { @content; }
+  }@else if $breakpoint == lg {
+    @media (max-width: 1400px) { @content; } 
+}
+}
+
+.style__button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    appearance: none;
+    border: none;
+    color: $mainColor;
+    background-color: transparent;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+
+    @include respond-to(sm){
+        font-size: 12.5px;
+    }
+}
+
+.delete__product {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  appearance: none;
+  border: none;
+  color: $mainColor;
+  background-color: transparent;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+
+  @include respond-to(sm){
+    font-size: 12.5px;
+  }
+}
+
+.drop__down {
+  width: 171px;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+  display: none;
+
+  &.show-drop {
+    width: 171px;
+    display: flex;
+
+  }
+  
+
+  ul{
+    background-color: $blacColorTranstarent;
+    border-radius: 6px;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+
+
+    li {
+      font-size: 12px;
+      color: $colorwhite;
+      padding: 8px 16px;
+      &:hover{
+        background-color: $mainColor;
+      }
+    }
+  }
+}
+
+.card__templante {
+
+    width: 100%;
+    
+    .article__image {
+        width: 100%;
+
+        
+    }
+
+    .card__container {
+      margin-top: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      h3 {
+        font-size: 14px;
+        font-weight: 400;
+        color: $mainColor;
+      }
+
+      span {
+        font-size: 12.5px;
+        font-weight: 300;
+        color: $defaultToHover;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 400;
+        color: $mainColor;
+        margin: 8px 0;
+      }
+
+      .color__hoodies {
+        width: 100%;
+        display: flex;
+        gap: 2px
+        ;
+        img{
+          width: 14.4px;
+          border: 1px solid $outlineContainer;
+        }
+      }
+
+    }
+
+    
+}
+
+.addToCart {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  appearance: none;
+  outline: none;
+  border: none;
+  color: $colorwhite;
+  background-color: $mainColor;
+  width: 100%;
+  padding: 8px;
+
+  &:hover {
+    background-color: transparent;
+    color: $mainColor;
+    outline: 1px solid $mainColor;
+  }
+}
+
+label {
+  color: $defaultToHover;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  border: 1px solid $mainColor;
+  padding: 8px;
+}
+
+select {
+  width: 100%;
+  border: 1px solid $mainColor;
+  padding: 8px;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid $mainColor;
+  padding: 8px;
+}
