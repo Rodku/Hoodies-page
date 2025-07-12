@@ -301,7 +301,13 @@ main {
         margin: 0 auto;
         padding: 0 45px;
 
+        @include respond-to(md){
+            width: 100%;
+            padding: 0;
+        }
+
         @include respond-to(sm){
+            width: 100%;
             padding: 0;
         }
 
@@ -313,6 +319,11 @@ main {
             @include respond-to(sm){
             font-size: 24px;
             }
+        }
+
+        section {
+            padding: 0;
+
         }
 
         .options__ofProducts {

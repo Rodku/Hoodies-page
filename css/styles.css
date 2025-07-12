@@ -453,8 +453,15 @@ main .main__container-body {
   margin: 0 auto;
   padding: 0 45px;
 }
+@media (max-width: 1000px) {
+  main .main__container-body {
+    width: 100%;
+    padding: 0;
+  }
+}
 @media (max-width: 686px) {
   main .main__container-body {
+    width: 100%;
     padding: 0;
   }
 }
@@ -467,6 +474,9 @@ main .main__container-body h1 {
   main .main__container-body h1 {
     font-size: 24px;
   }
+}
+main .main__container-body section {
+  padding: 0;
 }
 main .main__container-body .options__ofProducts {
   width: 100%;
